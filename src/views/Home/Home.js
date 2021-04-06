@@ -8,6 +8,16 @@ const Home = () => {
   useEffect(() => {
     getListRegister(setListRegister)
   }, [])
+
+  const validateOk = () => {
+    alert('OK')
+  } 
+
+  const validateError = () => {
+    console.log(':(')
+  }
+
+
   return (
     <div className='box-table'>
       <Table striped bordered hover variant="dark">
@@ -22,6 +32,7 @@ const Home = () => {
             <th>Celular</th>
             <th>Código</th>
              <th>Imagen</th>
+             <th>¿El código e imagen coinciden?</th>
           </tr>
         </thead>
         <tbody>
@@ -37,6 +48,10 @@ const Home = () => {
                <td>{register.registro.dataForm.phone}</td>
                <td>{register.registro.dataForm.code}</td>
                <td><img className="size-image-beers" src={register.registro.URLRef} alt="imagen del código de la lata de cerveza"/></td>
+               <td>
+                 <a className="btn btn-primary text-white mx-2" onClick={validateOk}><i className="fas fa-check"></i></a>
+                 <a className="btn btn-danger text-white mx-2" onClick={validateError} ><i className="fas fa-times"></i></a>
+               </td>
             </tr>
             ))
           }
