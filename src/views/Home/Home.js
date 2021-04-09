@@ -31,7 +31,7 @@ const Home = () => {
             <th>Nombre</th>
             <th>Apellidos</th>
             <th>Email</th>
-            <th>DNI</th>
+            <th>DNI/Tarjeta de extranjería</th>
             <th>Fecha de Nacimiento</th>
             <th>Celular</th>
             <th>Código</th>

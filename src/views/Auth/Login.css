@@ -120,17 +120,18 @@ input {
   white-space: nowrap;
   border-radius: 0.2em;
   color: #fff;
-  background-color: rgb(139 25 141);
+  background-color:#d0a03d;;
   color: #fff;
   text-align: center;
   font-size: 2rem;
+  font-weight: 700;
   padding: 0.5rem 0rem;
   cursor: pointer;
 }
 
 .form__button:hover {
-  background: #ffb7028a;
-  color: #380f63;
+  background: black;
+  color: #fff;
 }
 
 .form__register {

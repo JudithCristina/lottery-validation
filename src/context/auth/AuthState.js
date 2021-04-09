@@ -6,7 +6,7 @@ import {
   db,
 } from '../../firebase/config';
 import {
-  signInWithEmail
+  signInWithEmail, logOut
 } from '../../firebase/auth'
 import {
   REGISTRO_EXITOSO,
@@ -89,6 +89,14 @@ const AuthState = ({ children }) => {
     }
 
   };
+
+  const cerrarSesion = () => {
+    logOut().then(() => {
+      dispatch({
+        type: CERRAR_SESION,
+      });
+    });
+  }
 
   // //Crear coleccion de perfil de usuario
   // const addUserCollection = async (datos) => {
@@ -404,7 +412,7 @@ const AuthState = ({ children }) => {
         iniciarSesion,
         // validateCurrentPassword,
         usuarioAutenticado,
-        // cerrarSesion,
+        cerrarSesion,
         // loginGoogle,
         // loginFacebook,
         // updatePasswordFirebase,
