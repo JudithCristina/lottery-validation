@@ -8,8 +8,17 @@ export const getListRegister = (setRegisterList) => {
     .onSnapshot((querySnapshot) => {
       const groupList = [];
       querySnapshot.forEach((doc) => {
-        groupList.push(doc.data());
+        const data = doc.data();
+        const{id} = doc
+        groupList.push({...data,id});
       });
       setRegisterList(groupList);
     });
+};
+export const updateValid = async (valid, id) => {
+  console.log('hola mundo',valid, id)
+  const doc = await db.collection('user').doc(id);
+  await doc.update({
+    valid: valid,
+  });
 };

@@ -6,3 +6,92 @@
   width: 20rem;
 margin: 0 2rem;
 }
+
+.btn-valid{
+  display: flex!important;
+  justify-content: center!important;
+  align-items: center!important;
+  border: 2px solid rgb(15, 18, 218)!important;
+  border-radius: 0.5rem!important;
+  padding: 1rem!important;
+  width: 10rem;
+  font-size: 1.4rem!important;
+  font-weight: bolder!important;
+  background-color: #fff!important;
+  margin-bottom: 1rem;
+}
+.btn-valid-active{
+  display: flex!important;
+  justify-content: center!important;
+  align-items: center!important;
+  border: 2px solid rgb(15, 18, 218)!important;
+  border-radius: 0.5rem!important;
+  padding: 1rem!important;
+  width: 10rem;
+  font-size: 1.4rem!important;
+  font-weight: bolder!important;
+  background-color: rgb(15, 18, 218)!important;
+  margin-bottom: 1rem;
+  color:#fff!important
+}
+.btn-valid:hover{
+  background-color: rgb(15, 18, 218)!important;
+  color:#fff!important
+}
+.btn-valid span{
+padding-left: 1rem;
+}
+.btn-valid-active span{
+padding-left: 1rem;
+}
+.btn-invalid{
+   display: flex!important;
+  justify-content: center!important;
+  align-items: center!important;
+  border: 2px solid red!important;
+  border-radius: 0.5rem!important;
+  padding: 1rem!important;
+  width: 10rem;
+  font-size: 1.4rem!important;
+  font-weight: bolder!important;
+  background-color: #fff!important;
+}
+.btn-invalid:hover{
+  background-color: red!important;
+  color:#fff!important
+}
+.btn-invalid-active{
+   display: flex!important;
+  justify-content: center!important;
+  align-items: center!important;
+  border: 2px solid red!important;
+  border-radius: 0.5rem!important;
+  padding: 1rem!important;
+  width: 10rem;
+  font-size: 1.4rem!important;
+  font-weight: bolder!important;
+  background-color: red!important;
+   color:#fff!important
+}
+.btn-invalid span{
+padding-left: 1rem;
+}
+.btn-invalid-active span{
+padding-left: 1rem;
+}
+.style-button{
+  width: 4rem;
+  height: 2.5rem;
+  margin: 0.5rem;
+  color: #fff;
+  font-size: 1.2rem;
+}
+.zoomIn{
+  background-color: rgb(255, 123, 0);
+}
+.zoomOut{
+  background-color: rgb(192, 0, 250);
+}
+.reset{
+  background-color: red;
+}
