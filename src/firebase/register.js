@@ -7,6 +7,7 @@ export const getListRegister = (setRegisterList) => {
   return db.collection('user')
     .onSnapshot((querySnapshot) => {
       const groupList = [];
+      console.log(querySnapshot.size,"total de articulos")
       querySnapshot.forEach((doc) => {
         const data = doc.data();
         const{id} = doc
